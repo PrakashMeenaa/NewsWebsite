@@ -6,7 +6,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 export class NewsComponent extends Component {
   static defaultProps = {
-    pageSize: 10,
+    pageSize:70,
     country: "in",
     category: "general",
   };
@@ -16,20 +16,23 @@ export class NewsComponent extends Component {
       article: [],
       loading: false,
       page: 1,
-      articleCount: 0,
+      articleCount:0 ,
     };
     document.title = `P News - ${this.props.category}`;
   }
 
   update = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e2df43de64444998a717cd647929fb3c&page=${this.state.page}&pageSize=${this.props.pageSize}}`;
+    this.props.setProgress(10);
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d758c8cb2763436196f32c4a46ea19f7&page=${this.state.page}&pageSize=${this.props.pageSize}}`;
+    this.props.setProgress(50);
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({ loading: false });
+    this.props.setProgress(100);
     this.setState({
       article: parsedData.articles,
       articleCount: parsedData.totalResults,
+      loading: false
     });
   };
 
@@ -37,15 +40,17 @@ export class NewsComponent extends Component {
     this.update();
   }
   fetchData = async () => {
-    this.setState({ page: ++this.state.page + 1 });
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=e2df43de64444998a717cd647929fb3c&page=${this.state.page}&pageSize=${this.props.pageSize}}`;
+    
+    this.setState({ page:++this.state.page + 1 });
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d758c8cb2763436196f32c4a46ea19f7&page=${this.state.page}&pageSize=${this.props.pageSize}}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({ loading: false });
     this.setState({
       article: this.state.article.concat(parsedData.articles),
       articleCount: parsedData.totalResults,
+      loading: false
+      
     });
     console.log(`${this.state.article.length}`);
     console.log(`${this.state.articleCount}`);
@@ -65,11 +70,7 @@ export class NewsComponent extends Component {
           next={this.fetchData}
           hasMore={this.state.article.length !== this.state.articleCount}
           loader={<Spinner />}
-          endMessage={
-            <p style={{ textAlign: "center" }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
+          
         >
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 grid-flow-row gap-y-10 gap-x-10 p-10">
             {this.state.article.map((Element, index) => {
