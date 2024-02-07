@@ -1,0 +1,106 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Reggae icon Aston 'Family Man' Barrett, Bob Marley's bassist, dies",
+      "description": "Aston Barrett, bassist for Bob Marley and the Wailers, was a key player in the growth of reggae.",
+      "url": "https://www.bbc.co.uk/news/entertainment-arts-68196823",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17E98/production/_132544979_mediaitem132544978.jpg",
+      "publishedAt": "2024-02-04T15:22:15.1716228Z",
+      "content": "Aston Barrett, the bassist of the legendary reggae band Bob Marley and the Wailers, has died at the age of 77.\r\n\"Family Man\", as he was known, was born in 1946 and grew up in the Jamaican capital, Ki… [+1275 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "US elections: Biden set to win South Carolina Democratic primary",
+      "description": "In what appeared to be a victory statement, Mr Biden pledged to make Donald Trump a \"loser\".",
+      "url": "https://www.bbc.co.uk/news/world-us-canada-68196047",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/15DC8/production/_132544598_10279e3589a5980fc59fbfc93bb142cd8acde1900_0_5500_36671000x667-1.jpg",
+      "publishedAt": "2024-02-04T11:22:15.3738446Z",
+      "content": "US President Joe Biden will win South Carolina's Democratic primary, the BBC's US partner CBS has projected. \r\nIn what appeared to be a victory statement, Mr Biden pledged to make Republican Donald T… [+1596 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Imran Khan: How Pakistan ex-PM plans to win an election from jail",
+      "description": "The former Pakistan PM's party believes new tactics can help it win elections despite a crackdown.",
+      "url": "https://www.bbc.co.uk/news/world-asia-68178513",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E59F/production/_132538785_2c50e727d53f16a087e903c7264132801d37e77d.jpg",
+      "publishedAt": "2024-02-04T11:07:17.342893Z",
+      "content": "From prime minister to prison in less than two years, Imran Khan and his party have fallen dramatically from political grace. \r\nBut the PTI says it has not given up its belief that it can win this we… [+10688 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "'It was like hell': Dozens killed in Chile wildfires",
+      "description": "Officials have warned the death toll is likely to rise as rescue teams reach the hardest hit areas.",
+      "url": "https://www.bbc.co.uk/news/world-latin-america-68197170",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13532/production/_132545197_p0h8ys84.jpg",
+      "publishedAt": "2024-02-04T09:37:17.2021102Z",
+      "content": "Raging wildfires in Chile have killed at least 51 people the Valparaíso region, as the country faces its worst disaster since the 2010 earthquake.\r\nOfficials have warned the death toll is likely to r… [+195 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Hage Geingob: Namibia's president dies aged 82",
+      "description": "The world leader revealed his cancer diagnosis to the public last month.",
+      "url": "https://www.bbc.co.uk/news/world-africa-68196412",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/642C/production/_132544652_gettyimages-1817803150.jpg",
+      "publishedAt": "2024-02-04T03:52:10.391029Z",
+      "content": "Namibia's President Hage Geingob has died while receiving medical treatment at a hospital in the capital, Windhoek. \r\nVice-President Nangolo Mbumba announced that Mr Geingob had died in the early hou… [+881 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Ukraine war: No more easy deals for Russian convicts freed to fight",
+      "description": "Russian prisoners released to fight in Ukraine are no longer offered a presidential pardon and face stricter conditions.",
+      "url": "https://www.bbc.co.uk/news/world-europe-68140873",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/469F/production/_132497081_prisoners_2.jpg",
+      "publishedAt": "2024-02-04T00:37:14.1322148Z",
+      "content": "Russia has been releasing prisoners to fight in Ukraine for more than a year, originally offering them a pardon and freedom after six months, even if they have been convicted of a violent crime. \r\nBu… [+6993 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Grammy Awards 2024: Dua Lipa, Billie Eilish, SZA and Joni Mitchell to star at ceremony",
+      "description": "Dua Lipa, Billie Eilish and SZA are up for prizes, while Joni Mitchell will make her Grammys debut.",
+      "url": "https://www.bbc.co.uk/news/entertainment-arts-68033972",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/4F6C/production/_132523302_gettyimages-1933536481_2.jpg",
+      "publishedAt": "2024-02-04T00:37:11.1399448Z",
+      "content": "Whisper it quietly... but could the Grammy Awards get it right this year?\r\nThe ceremony, which takes place in Los Angeles on Sunday, is notorious for scoring own goals, often rewarding middle-of-the-… [+8970 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Iceland volcano: Grindavik's people may never return after volcano spills lava into town",
+      "description": "Grindavik now lies empty, its people have fled, after molten lava seeped into the town.",
+      "url": "https://www.bbc.co.uk/news/world-europe-68133386",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12F38/production/_132542677_559e6a9395d1478b218e7d3e8dad5b4864e6fd0b0_128_1501_8441000x563.jpg",
+      "publishedAt": "2024-02-04T00:22:12.8200901Z",
+      "content": "The resilient community of Grindavik has for the past weeks and months experienced the relentless forces of nature, once again proving why Iceland is often called the \"Land of Fire and Ice.\"\r\nThree h… [+6213 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Iran says US strikes are a 'strategic mistake'",
+      "description": "The Pentagon has struck Iran-linked targets in Syria and Iraq in response to a drone attack on a US base.",
+      "url": "https://www.bbc.co.uk/news/world-us-canada-68192722",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/181FE/production/_132541889_mediaitem132541888.jpg",
+      "publishedAt": "2024-02-04T00:07:21.7101728Z",
+      "content": "Iran has called US air strikes on Iraq and Syria a \"strategic mistake\" after 85 targets were hit across the region on Saturday.\r\nThe US has launched retaliatory strikes in response to last week's dro… [+3235 chars]"
+    },
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "US launches retaliatory strikes in Iraq and Syria - live updates",
+      "description": "The White House previously said it was not looking for war with Iran but would not tolerate attacks on troops.",
+      "url": "https://www.bbc.co.uk/news/live/world-68144478",
+      "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+      "publishedAt": "2024-02-02T21:37:22.3186474Z",
+      "content": "As weve just reported, the US has started to attack targets in Iraq and Syria.\r\nIt is the beginning of the US retaliation to a drone strike on a US military base in Jordan on Sunday by Iran-backed mi… [+787 chars]"
+    }
+  ]
+}
