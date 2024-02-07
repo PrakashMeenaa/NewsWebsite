@@ -46,7 +46,10 @@ export class Navbar extends Component {
                 />
               </svg>
             </button>
-            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div
+              className="hidden w-full md:block md:w-auto"
+              id="navbar-default"
+            >
               <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <a
@@ -100,7 +103,8 @@ export class Navbar extends Component {
 
 export default Navbar;
 
-{/* <li className="hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
+{
+  /* <li className="hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
                   Home
                 </li>
                 <li className="hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
@@ -108,4 +112,5 @@ export default Navbar;
                 </li>
                 <li className="hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
                   Contact
-                </li> */}
+                </li> */
+}
