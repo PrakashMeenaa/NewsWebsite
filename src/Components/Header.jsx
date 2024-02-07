@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-20">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href="/"
+            href="/Home"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img

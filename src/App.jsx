@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NewsComponent from "./Components/NewsComponent";
 import Header from "./Components/Header";
 import LoadingBar from "react-top-loading-bar";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [progress, setprogress] = useState(0);
@@ -108,6 +109,7 @@ const App = () => {
           ></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };

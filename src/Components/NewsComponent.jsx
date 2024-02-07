@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const NewsComponent = (props) => {
@@ -14,7 +14,7 @@ const NewsComponent = (props) => {
 
   let update = async () => {
     props.setprogress(10);
-    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d758c8cb2763436196f32c4a46ea19f7&page=${page}&pageSize=${props.pageSize}}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d141baa6edea4bbfa3ad0bf0f8b807b9&page=${page}&pageSize=${props.pageSize}}`;
     props.setprogress(50);
     setloading(true);
     let data = await fetch(url);
@@ -31,7 +31,7 @@ const NewsComponent = (props) => {
 
   let fetchData = async () => {
     setpage(page + 1);
-    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d758c8cb2763436196f32c4a46ea19f7&page=${page}&pageSize=${props.pageSize}}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=d141baa6edea4bbfa3ad0bf0f8b807b9&page=${page}&pageSize=${props.pageSize}}`;
     setloading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -108,5 +108,5 @@ NewsComponent.propTypes = {
   country: PropTypes.string,
   pageSize: PropTypes.number,
   category: PropTypes.string,
-}
+};
 export default NewsComponent;
