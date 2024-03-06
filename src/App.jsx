@@ -5,6 +5,8 @@ import NewsComponent from "./Components/NewsComponent";
 import Header from "./Components/Header";
 import LoadingBar from "react-top-loading-bar";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import About from "./Components/About";
 
 const App = () => {
   const [progress, setprogress] = useState(0);
@@ -105,6 +107,20 @@ const App = () => {
                 country="in"
                 category="Technology"
               />
+            }
+          ></Route>
+          <Route
+            exact
+            path="/Contact"
+            element={
+              <Contact/>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/About"
+            element={
+              <About/>
             }
           ></Route>
         </Routes>

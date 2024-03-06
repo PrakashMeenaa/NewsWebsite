@@ -12,7 +12,7 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <a href="/About" className=" hover:underline">
                     About
                   </a>
                 </li>
@@ -54,7 +54,7 @@ function Footer() {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="/Contact" className="hover:underline">
                     Contact Us
                   </a>
                 </li>

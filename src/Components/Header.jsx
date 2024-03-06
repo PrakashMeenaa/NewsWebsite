@@ -1,16 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setisOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setisOpen(!prevState.isOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  let menuRef = useRef();
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+        
+      }
+    };
 
+    document.addEventListener("mousedown", handler);
+
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    }
+
+  });
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-20">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-20" ref={menuRef}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/Home"
@@ -19,7 +34,7 @@ const Header = () => {
             <img
               src="/src/assets/NewsLogo.png"
               className="h-8"
-              alt="Flowbite Logo"
+              alt="Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               PNews
@@ -27,7 +42,7 @@ const Header = () => {
           </a>
           <button
             className="inline-flex items-center  p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            onClick={toggleNavbar}
+            onClick={toggleMenu}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +60,7 @@ const Header = () => {
               ></path>
             </svg>
           </button>
-          {isOpen && (
+          {isMenuOpen && (
             <div className=" absolute top-14 left-0 md:hidden sm:duration-500 w-full md:w-auto ">
               <ul className="font-medium flex flex-col p-4  mt-4 border border-gray-100 bg-white  dark:bg-gray-800  dark:border-gray-700">
                 <Link className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-200  dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white ">
@@ -93,10 +108,12 @@ const Header = () => {
                 >
                   Technology
                 </Link>
-                <Link className=" nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-200  dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white ">
+                <Link className=" nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-200  dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white "
+                to='/About'>
                   About
                 </Link>
-                <Link className=" nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-200  dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white ">
+                <Link className=" nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-200  dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white "
+                 to='/Contact'>
                   Contact
                 </Link>
               </ul>
@@ -147,10 +164,12 @@ const Header = () => {
               >
                 Technology
               </Link>
-              <Link className="nav-link hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent sm:hidden lg:flex">
+              <Link className="nav-link hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent sm:hidden lg:flex"
+              to='/About'>
                 About
               </Link>
-              <Link className="nav-link hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent sm:hidden lg:flex">
+              <Link className="nav-link hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent sm:hidden lg:flex"
+              to='/Contact'>
                 Contact
               </Link>
             </ul>
